@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
-function Playground() {
+export default function Ground() {
   const [text, setText] = useState('a');
 
   useEffect(() => {
@@ -27,21 +27,6 @@ function Playground() {
         />
       </label>
       <h1>{text}</h1>
-    </>
-  );
-}
-
-export default function App() {
-  const [show, setShow] = useState(false);
-  return (
-    <>
-      <button
-        className='bg-green-500 px-2 py-1 rounded-md mt-4'
-        onClick={() => setShow(!show)}>
-        {show ? 'Unmount' : 'Mount'} the component
-      </button>
-      {show && <hr />}
-      {show && <Playground />}
     </>
   );
 }

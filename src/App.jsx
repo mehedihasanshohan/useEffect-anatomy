@@ -1,7 +1,5 @@
 import './App.css'
-import Effecting from './compponents/cleanup/Effecting'
 import Playground from './compponents/cleanup/PlayGround'
- import VideoApp from './compponents/videoplayer/VideoApp'
 
 function App() {
 
