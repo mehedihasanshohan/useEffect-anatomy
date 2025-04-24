@@ -9,7 +9,7 @@ const Effecting = () => {
     return ()=>{
         console.log('cleanup')
     }
-  },[]);
+  },[]); 
 
 
   return (
